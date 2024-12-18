@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Import and Clean restautants information dataset – Final Project</title>
+<title>Collecting and Processing Environmental and Contextual Data for NYC Restaurants – Final Project</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -116,7 +116,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../analysis/index.html">Analysis</a></li><li class="breadcrumb-item"><a href="../analysis/3_NYC_Restaurant_Environmental_Insights.html">Import and Clean restautants information dataset</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../analysis/index.html">Analysis</a></li><li class="breadcrumb-item"><a href="../analysis/3_NYC_Restaurant_Environmental_Insights.html">Collecting and Processing Environmental and Contextual Data for NYC Restaurants</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -182,13 +182,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../analysis/3_NYC_Restaurant_Environmental_Insights.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Import and Clean restautants information dataset</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../analysis/4_interactive_map.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">4_interactive_map.html</span></a>
+ <span class="menu-text">Collecting and Processing Environmental and Contextual Data for NYC Restaurants</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -209,21 +203,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#import-parking-lot-data" id="toc-import-parking-lot-data" class="nav-link active" data-scroll-target="#import-parking-lot-data">Import Parking Lot Data</a></li>
-  <li><a href="#import-bus-shelter-and-subway-station-data-calculate-public-transportation-accessibility" id="toc-import-bus-shelter-and-subway-station-data-calculate-public-transportation-accessibility" class="nav-link" data-scroll-target="#import-bus-shelter-and-subway-station-data-calculate-public-transportation-accessibility">Import Bus Shelter and Subway Station Data &amp; Calculate Public Transportation Accessibility</a></li>
-  <li><a href="#import-points-of-interest" id="toc-import-points-of-interest" class="nav-link" data-scroll-target="#import-points-of-interest">Import Points of Interest</a></li>
-  <li><a href="#import-noises-complaints-data" id="toc-import-noises-complaints-data" class="nav-link" data-scroll-target="#import-noises-complaints-data">Import Noises Complaints Data</a></li>
-  <li><a href="#import-median-hh-income-data" id="toc-import-median-hh-income-data" class="nav-link" data-scroll-target="#import-median-hh-income-data">Import Median HH Income Data</a></li>
-  <li><a href="#clean-the-price-column" id="toc-clean-the-price-column" class="nav-link" data-scroll-target="#clean-the-price-column">Clean the “Price” Column</a></li>
+  <li><a href="#proximity-to-parking-lots" id="toc-proximity-to-parking-lots" class="nav-link active" data-scroll-target="#proximity-to-parking-lots">01 Proximity to Parking Lots</a></li>
+  <li><a href="#public-transportation-accessibility" id="toc-public-transportation-accessibility" class="nav-link" data-scroll-target="#public-transportation-accessibility">02 Public Transportation Accessibility</a></li>
+  <li><a href="#proximity-to-romantic-locations" id="toc-proximity-to-romantic-locations" class="nav-link" data-scroll-target="#proximity-to-romantic-locations">03 Proximity to Romantic Locations</a></li>
+  <li><a href="#noise-pollution-analysis" id="toc-noise-pollution-analysis" class="nav-link" data-scroll-target="#noise-pollution-analysis">04 Noise Pollution Analysis</a></li>
+  <li><a href="#socioeconomic-context" id="toc-socioeconomic-context" class="nav-link" data-scroll-target="#socioeconomic-context">05 Socioeconomic Context</a></li>
+  <li><a href="#price-data-cleaning-and-standardization" id="toc-price-data-cleaning-and-standardization" class="nav-link" data-scroll-target="#price-data-cleaning-and-standardization">06 Price Data Cleaning and Standardization</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../analysis/index.html">Analysis</a></li><li class="breadcrumb-item"><a href="../analysis/3_NYC_Restaurant_Environmental_Insights.html">Import and Clean restautants information dataset</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../analysis/index.html">Analysis</a></li><li class="breadcrumb-item"><a href="../analysis/3_NYC_Restaurant_Environmental_Insights.html">Collecting and Processing Environmental and Contextual Data for NYC Restaurants</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Import and Clean restautants information dataset</h1>
+<h1 class="title">Collecting and Processing Environmental and Contextual Data for NYC Restaurants</h1>
 </div>
 
 
@@ -240,6 +234,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
+<p>This section focuses on gathering, cleaning, and processing relevant environmental and contextual factors that may influence restaurant performance and customer experience. By integrating data on public transportation, proximity to romantic locations, noise pollution, socioeconomic conditions, and pricing, we constructed a comprehensive dataset. These processed variables will serve as key inputs for further evaluation and analysis.</p>
 <div id="10bc2c50-6782-45f6-8eed-666ef595b89b" class="cell" data-execution_count="12">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> geopandas <span class="im">as</span> gpd</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -376,95 +371,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<div id="c429154e-cd6f-4b0a-8c5c-160fd00214cc" class="cell" data-execution_count="14">
+<div id="d35e6244-4eae-4f5e-96be-a6cf2f7ff14c" class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>columns_to_keep <span class="op">=</span> [<span class="st">'title'</span>, <span class="st">'price'</span>, <span class="st">'categoryName'</span>, <span class="st">'address'</span>, </span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>                   <span class="st">'neighborhood'</span>, <span class="st">'street'</span>, <span class="st">'url'</span>, <span class="st">'geometry'</span>]</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>info_cleaned <span class="op">=</span> info[columns_to_keep]</span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>info_cleaned <span class="op">=</span> info_cleaned.to_crs(epsg<span class="op">=</span><span class="dv">4326</span>)</span>
 <span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>info_cleaned.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="14">
-<div>
-
-
-<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">title</th>
-<th data-quarto-table-cell-role="th">price</th>
-<th data-quarto-table-cell-role="th">categoryName</th>
-<th data-quarto-table-cell-role="th">address</th>
-<th data-quarto-table-cell-role="th">neighborhood</th>
-<th data-quarto-table-cell-role="th">street</th>
-<th data-quarto-table-cell-role="th">url</th>
-<th data-quarto-table-cell-role="th">geometry</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">0</td>
-<td>Phil-Am Kusina</td>
-<td>$10–20</td>
-<td>Filipino restaurant</td>
-<td>556 Tompkins Ave., Staten Island, NY 10305</td>
-<td>Rosebank</td>
-<td>556 Tompkins Ave.</td>
-<td>https://www.google.com/maps/search/?api=1&amp;quer...</td>
-<td>POINT (-74.07143 40.61246)</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">1</td>
-<td>H &amp; L Bagels</td>
-<td>$1–10</td>
-<td>Bagel shop</td>
-<td>8818 3rd Ave, Brooklyn, NY 11209</td>
-<td>Fort Hamilton</td>
-<td>8818 3rd Ave</td>
-<td>https://www.google.com/maps/search/?api=1&amp;quer...</td>
-<td>POINT (-74.03204 40.62163)</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">2</td>
-<td>Coszcal De Allende</td>
-<td>$30–50</td>
-<td>Mexican restaurant</td>
-<td>7506 3rd Ave, Brooklyn, NY 11209</td>
-<td>Bay Ridge</td>
-<td>7506 3rd Ave</td>
-<td>https://www.google.com/maps/search/?api=1&amp;quer...</td>
-<td>POINT (-74.02815 40.63131)</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">3</td>
-<td>E.A.T.</td>
-<td>$30–50</td>
-<td>American restaurant</td>
-<td>1064 Madison Ave, New York, NY 10028</td>
-<td>Manhattan</td>
-<td>1064 Madison Ave</td>
-<td>https://www.google.com/maps/search/?api=1&amp;quer...</td>
-<td>POINT (-73.96162 40.77732)</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">4</td>
-<td>Dowling's at The Carlyle</td>
-<td>$100+</td>
-<td>Restaurant</td>
-<td>35 E 76th St, New York, NY 10021</td>
-<td>Manhattan</td>
-<td>35 E 76th St</td>
-<td>https://www.google.com/maps/search/?api=1&amp;quer...</td>
-<td>POINT (-73.96315 40.77442)</td>
-</tr>
-</tbody>
-</table>
-
 </div>
-</div>
-</div>
-<section id="import-parking-lot-data" class="level1">
-<h1>Import Parking Lot Data</h1>
+<p>Parking availability can be a significant factor for customers driving to restaurants. We calculated the distance to the nearest parking lot for each restaurant, providing a realistic measure of parking convenience.</p>
+<section id="proximity-to-parking-lots" class="level2">
+<h2 class="anchored" data-anchor-id="proximity-to-parking-lots">01 Proximity to Parking Lots</h2>
 <div id="49d4adf9-a3c0-4e26-baa2-7b8d90144770" class="cell" data-execution_count="15">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> geopandas <span class="im">as</span> gpd</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
@@ -475,13 +392,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>                                  geometry<span class="op">=</span>gpd.GeoSeries.from_wkt(parking_lot[<span class="st">'the_geom'</span>]),</span>
 <span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>                                  crs<span class="op">=</span><span class="st">"EPSG:4326"</span>)</span>
 <span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>parking_lot_gdf <span class="op">=</span> parking_lot_gdf.to_crs(epsg<span class="op">=</span><span class="dv">32618</span>)</span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>parking_lot_gdf[<span class="st">'centroid'</span>] <span class="op">=</span> parking_lot_gdf.geometry.centroid</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>parking_lot_gdf <span class="op">=</span> parking_lot_gdf.to_crs(epsg<span class="op">=</span><span class="dv">32618</span>)</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>parking_lot_points <span class="op">=</span> parking_lot_gdf.set_geometry(<span class="st">'centroid'</span>)</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>parking_lot_gdf[<span class="st">'centroid'</span>] <span class="op">=</span> parking_lot_gdf.geometry.centroid</span>
 <span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>parking_lot_points.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>parking_lot_points <span class="op">=</span> parking_lot_gdf.set_geometry(<span class="st">'centroid'</span>)</span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>parking_lot_points.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="15">
 <div>
 
@@ -582,10 +502,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>restaurant_coords <span class="op">=</span> np.array(<span class="bu">list</span>(<span class="bu">zip</span>(info_cleaned.geometry.x, info_cleaned.geometry.y)))</span>
 <span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>parking_coords <span class="op">=</span> np.array(<span class="bu">list</span>(<span class="bu">zip</span>(parking_lot_points.geometry.x, parking_lot_points.geometry.y)))</span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>tree <span class="op">=</span> cKDTree(parking_coords)</span>
-<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>distances, indices <span class="op">=</span> tree.query(restaurant_coords)</span>
-<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>info_cleaned[<span class="st">'nearest_parking_distance'</span>] <span class="op">=</span> distances</span>
-<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>info_cleaned.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>tree <span class="op">=</span> cKDTree(parking_coords)</span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>distances, indices <span class="op">=</span> tree.query(restaurant_coords)</span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>info_cleaned[<span class="st">'nearest_parking_distance'</span>] <span class="op">=</span> distances</span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a>info_cleaned.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="17">
 <div>
 
@@ -673,54 +600,56 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="import-bus-shelter-and-subway-station-data-calculate-public-transportation-accessibility" class="level1">
-<h1>Import Bus Shelter and Subway Station Data &amp; Calculate Public Transportation Accessibility</h1>
+<section id="public-transportation-accessibility" class="level2">
+<h2 class="anchored" data-anchor-id="public-transportation-accessibility">02 Public Transportation Accessibility</h2>
+<p>To measure accessibility, we calculated the number of bus stops and subway stations within a 500-meter radius of each restaurant. A combined Public Transport Score was created to quantify the convenience of reaching these locations via public transit.</p>
 <div id="fb42a529-73a7-4c82-b647-bf19fe9eaeaa" class="cell" data-execution_count="18">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> geopandas <span class="im">as</span> gpd</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> shapely.geometry <span class="im">import</span> Point</span>
 <span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>bus_shelters <span class="op">=</span> pd.read_csv(<span class="st">"Bus_Stop_Shelter_20241215.csv"</span>)</span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>bus_shelters_gdf <span class="op">=</span> gpd.GeoDataFrame(bus_shelters, </span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>                                   geometry<span class="op">=</span>gpd.points_from_xy(bus_shelters[<span class="st">'Longitude'</span>], bus_shelters[<span class="st">'Latitude'</span>]),</span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>                                   crs<span class="op">=</span><span class="st">"EPSG:4326"</span>)</span>
-<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>subway_stations <span class="op">=</span> pd.read_csv(<span class="st">"MTA_Subway_Stations_20241216.csv"</span>)</span>
-<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>subway_gdf <span class="op">=</span> gpd.GeoDataFrame(subway_stations, </span>
-<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>                              geometry<span class="op">=</span>gpd.points_from_xy(subway_stations[<span class="st">'GTFS Longitude'</span>], subway_stations[<span class="st">'GTFS Latitude'</span>]),</span>
-<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>                              crs<span class="op">=</span><span class="st">"EPSG:4326"</span>)</span>
-<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>bus_shelters <span class="op">=</span> pd.read_csv(<span class="st">"Bus_Stop_Shelter_20241215.csv"</span>)</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>bus_shelters_gdf <span class="op">=</span> gpd.GeoDataFrame(bus_shelters, </span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>                                   geometry<span class="op">=</span>gpd.points_from_xy(bus_shelters[<span class="st">'Longitude'</span>], bus_shelters[<span class="st">'Latitude'</span>]),</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>                                   crs<span class="op">=</span><span class="st">"EPSG:4326"</span>)</span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>subway_stations <span class="op">=</span> pd.read_csv(<span class="st">"MTA_Subway_Stations_20241216.csv"</span>)</span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>subway_gdf <span class="op">=</span> gpd.GeoDataFrame(subway_stations, </span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>                              geometry<span class="op">=</span>gpd.points_from_xy(subway_stations[<span class="st">'GTFS Longitude'</span>], subway_stations[<span class="st">'GTFS Latitude'</span>]),</span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>                              crs<span class="op">=</span><span class="st">"EPSG:4326"</span>)</span>
 <span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>info_cleaned <span class="op">=</span> info_cleaned.to_crs(epsg<span class="op">=</span><span class="dv">32618</span>)</span>
-<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>bus_shelters_gdf <span class="op">=</span> bus_shelters_gdf.to_crs(epsg<span class="op">=</span><span class="dv">32618</span>)</span>
-<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>subway_gdf <span class="op">=</span> subway_gdf.to_crs(epsg<span class="op">=</span><span class="dv">32618</span>)</span>
-<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>info_cleaned <span class="op">=</span> info_cleaned.to_crs(epsg<span class="op">=</span><span class="dv">32618</span>)</span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>bus_shelters_gdf <span class="op">=</span> bus_shelters_gdf.to_crs(epsg<span class="op">=</span><span class="dv">32618</span>)</span>
+<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a>subway_gdf <span class="op">=</span> subway_gdf.to_crs(epsg<span class="op">=</span><span class="dv">32618</span>)</span>
 <span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a>buffer_radius <span class="op">=</span> <span class="dv">500</span>  </span>
-<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a>info_cleaned[<span class="st">'buffer'</span>] <span class="op">=</span> info_cleaned.geometry.<span class="bu">buffer</span>(buffer_radius)</span>
-<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a>buffer_radius <span class="op">=</span> <span class="dv">500</span>  </span>
+<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a>info_cleaned[<span class="st">'buffer'</span>] <span class="op">=</span> info_cleaned.geometry.<span class="bu">buffer</span>(buffer_radius)</span>
 <span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> count_within_buffer(<span class="bu">buffer</span>, gdf):</span>
-<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a> </span>
-<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> gdf.within(<span class="bu">buffer</span>).<span class="bu">sum</span>()</span>
-<span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-29"><a href="#cb7-29" aria-hidden="true" tabindex="-1"></a><span class="co"># bus shelter</span></span>
-<span id="cb7-30"><a href="#cb7-30" aria-hidden="true" tabindex="-1"></a>info_cleaned[<span class="st">'bus_count_500m'</span>] <span class="op">=</span> info_cleaned[<span class="st">'buffer'</span>].<span class="bu">apply</span>(</span>
-<span id="cb7-31"><a href="#cb7-31" aria-hidden="true" tabindex="-1"></a>    <span class="kw">lambda</span> buf: count_within_buffer(buf, bus_shelters_gdf)</span>
-<span id="cb7-32"><a href="#cb7-32" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb7-33"><a href="#cb7-33" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-34"><a href="#cb7-34" aria-hidden="true" tabindex="-1"></a><span class="co"># subway station</span></span>
-<span id="cb7-35"><a href="#cb7-35" aria-hidden="true" tabindex="-1"></a>info_cleaned[<span class="st">'subway_count_500m'</span>] <span class="op">=</span> info_cleaned[<span class="st">'buffer'</span>].<span class="bu">apply</span>(</span>
-<span id="cb7-36"><a href="#cb7-36" aria-hidden="true" tabindex="-1"></a>    <span class="kw">lambda</span> buf: count_within_buffer(buf, subway_gdf)</span>
-<span id="cb7-37"><a href="#cb7-37" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb7-38"><a href="#cb7-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> count_within_buffer(<span class="bu">buffer</span>, gdf):</span>
+<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a> </span>
+<span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> gdf.within(<span class="bu">buffer</span>).<span class="bu">sum</span>()</span>
+<span id="cb7-29"><a href="#cb7-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-30"><a href="#cb7-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-31"><a href="#cb7-31" aria-hidden="true" tabindex="-1"></a>info_cleaned[<span class="st">'bus_count_500m'</span>] <span class="op">=</span> info_cleaned[<span class="st">'buffer'</span>].<span class="bu">apply</span>(</span>
+<span id="cb7-32"><a href="#cb7-32" aria-hidden="true" tabindex="-1"></a>    <span class="kw">lambda</span> buf: count_within_buffer(buf, bus_shelters_gdf)</span>
+<span id="cb7-33"><a href="#cb7-33" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb7-34"><a href="#cb7-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-35"><a href="#cb7-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-36"><a href="#cb7-36" aria-hidden="true" tabindex="-1"></a>info_cleaned[<span class="st">'subway_count_500m'</span>] <span class="op">=</span> info_cleaned[<span class="st">'buffer'</span>].<span class="bu">apply</span>(</span>
+<span id="cb7-37"><a href="#cb7-37" aria-hidden="true" tabindex="-1"></a>    <span class="kw">lambda</span> buf: count_within_buffer(buf, subway_gdf)</span>
+<span id="cb7-38"><a href="#cb7-38" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb7-39"><a href="#cb7-39" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-40"><a href="#cb7-40" aria-hidden="true" tabindex="-1"></a>info_cleaned[<span class="st">'public_transport_score'</span>] <span class="op">=</span> info_cleaned[<span class="st">'bus_count_500m'</span>] <span class="op">*</span> <span class="dv">1</span> <span class="op">+</span> info_cleaned[<span class="st">'subway_count_500m'</span>] <span class="op">*</span> <span class="dv">3</span></span>
-<span id="cb7-41"><a href="#cb7-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-40"><a href="#cb7-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-41"><a href="#cb7-41" aria-hidden="true" tabindex="-1"></a>info_cleaned[<span class="st">'public_transport_score'</span>] <span class="op">=</span> info_cleaned[<span class="st">'bus_count_500m'</span>] <span class="op">*</span> <span class="dv">1</span> <span class="op">+</span> info_cleaned[<span class="st">'subway_count_500m'</span>] <span class="op">*</span> <span class="dv">3</span></span>
 <span id="cb7-42"><a href="#cb7-42" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-43"><a href="#cb7-43" aria-hidden="true" tabindex="-1"></a>info_cleaned <span class="op">=</span> info_cleaned.drop(columns<span class="op">=</span><span class="st">'buffer'</span>)</span>
-<span id="cb7-44"><a href="#cb7-44" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-45"><a href="#cb7-45" aria-hidden="true" tabindex="-1"></a>info_cleaned.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb7-43"><a href="#cb7-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-44"><a href="#cb7-44" aria-hidden="true" tabindex="-1"></a>info_cleaned <span class="op">=</span> info_cleaned.drop(columns<span class="op">=</span><span class="st">'buffer'</span>)</span>
+<span id="cb7-45"><a href="#cb7-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-46"><a href="#cb7-46" aria-hidden="true" tabindex="-1"></a>info_cleaned.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="18">
 <div>
 
@@ -826,8 +755,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="import-points-of-interest" class="level1">
-<h1>Import Points of Interest</h1>
+<section id="proximity-to-romantic-locations" class="level2">
+<h2 class="anchored" data-anchor-id="proximity-to-romantic-locations">03 Proximity to Romantic Locations</h2>
+<p>We selected parks, waterfronts, museums, and sculpture gardens as romantic destinations due to their association with nature, scenic beauty, and cultural value. The distance from each restaurant to the nearest boundary of these locations was calculated to evaluate romantic appeal.</p>
 <div id="bcd1e592-0ee5-4533-b15a-c66c41cdb6be" class="cell" data-execution_count="19">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> osmnx <span class="im">as</span> ox</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> geopandas <span class="im">as</span> gpd</span>
@@ -854,27 +784,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> nearest_distance(row, poi_gdf):</span>
-<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-28"><a href="#cb8-28" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb8-29"><a href="#cb8-29" aria-hidden="true" tabindex="-1"></a>    nearest_geom <span class="op">=</span> poi_gdf.geometry.<span class="bu">apply</span>(<span class="kw">lambda</span> geom: row.geometry.distance(geom))</span>
-<span id="cb8-30"><a href="#cb8-30" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> nearest_geom.<span class="bu">min</span>()</span>
-<span id="cb8-31"><a href="#cb8-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-32"><a href="#cb8-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-33"><a href="#cb8-33" aria-hidden="true" tabindex="-1"></a>info_cleaned[<span class="st">'nearest_romantic_distance'</span>] <span class="op">=</span> info_cleaned.<span class="bu">apply</span>(</span>
-<span id="cb8-34"><a href="#cb8-34" aria-hidden="true" tabindex="-1"></a>    <span class="kw">lambda</span> row: nearest_distance(row, points_of_interest), axis<span class="op">=</span><span class="dv">1</span></span>
-<span id="cb8-35"><a href="#cb8-35" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb8-36"><a href="#cb8-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a>    nearest_geom <span class="op">=</span> poi_gdf.geometry.<span class="bu">apply</span>(<span class="kw">lambda</span> geom: row.geometry.distance(geom))</span>
+<span id="cb8-28"><a href="#cb8-28" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> nearest_geom.<span class="bu">min</span>()</span>
+<span id="cb8-29"><a href="#cb8-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-30"><a href="#cb8-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-31"><a href="#cb8-31" aria-hidden="true" tabindex="-1"></a>info_cleaned[<span class="st">'nearest_romantic_distance'</span>] <span class="op">=</span> info_cleaned.<span class="bu">apply</span>(</span>
+<span id="cb8-32"><a href="#cb8-32" aria-hidden="true" tabindex="-1"></a>    <span class="kw">lambda</span> row: nearest_distance(row, points_of_interest), axis<span class="op">=</span><span class="dv">1</span></span>
+<span id="cb8-33"><a href="#cb8-33" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb8-34"><a href="#cb8-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-35"><a href="#cb8-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-36"><a href="#cb8-36" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(info_cleaned[[<span class="st">'title'</span>, <span class="st">'nearest_romantic_distance'</span>]].head())</span>
 <span id="cb8-37"><a href="#cb8-37" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-38"><a href="#cb8-38" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(info_cleaned[[<span class="st">'title'</span>, <span class="st">'nearest_romantic_distance'</span>]].head())</span>
-<span id="cb8-39"><a href="#cb8-39" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-40"><a href="#cb8-40" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-41"><a href="#cb8-41" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">10</span>))</span>
-<span id="cb8-42"><a href="#cb8-42" aria-hidden="true" tabindex="-1"></a>points_of_interest.plot(ax<span class="op">=</span>ax, color<span class="op">=</span><span class="st">'green'</span>, alpha<span class="op">=</span><span class="fl">0.5</span>, label<span class="op">=</span><span class="st">'Romantic Points'</span>)</span>
-<span id="cb8-43"><a href="#cb8-43" aria-hidden="true" tabindex="-1"></a>info_cleaned.plot(ax<span class="op">=</span>ax, color<span class="op">=</span><span class="st">'red'</span>, markersize<span class="op">=</span><span class="dv">5</span>, label<span class="op">=</span><span class="st">'Restaurants'</span>)</span>
-<span id="cb8-44"><a href="#cb8-44" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Restaurants and Romantic Locations in NYC"</span>)</span>
-<span id="cb8-45"><a href="#cb8-45" aria-hidden="true" tabindex="-1"></a>plt.legend()</span>
-<span id="cb8-46"><a href="#cb8-46" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb8-38"><a href="#cb8-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-39"><a href="#cb8-39" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">10</span>))</span>
+<span id="cb8-40"><a href="#cb8-40" aria-hidden="true" tabindex="-1"></a>points_of_interest.plot(ax<span class="op">=</span>ax, color<span class="op">=</span><span class="st">'green'</span>, alpha<span class="op">=</span><span class="fl">0.5</span>, label<span class="op">=</span><span class="st">'Romantic Points'</span>)</span>
+<span id="cb8-41"><a href="#cb8-41" aria-hidden="true" tabindex="-1"></a>info_cleaned.plot(ax<span class="op">=</span>ax, color<span class="op">=</span><span class="st">'red'</span>, markersize<span class="op">=</span><span class="dv">5</span>, label<span class="op">=</span><span class="st">'Restaurants'</span>)</span>
+<span id="cb8-42"><a href="#cb8-42" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Restaurants and Romantic Locations in NYC"</span>)</span>
+<span id="cb8-43"><a href="#cb8-43" aria-hidden="true" tabindex="-1"></a>plt.legend()</span>
+<span id="cb8-44"><a href="#cb8-44" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>/var/folders/7h/jtn8ncw16d59q490lkn0lqlh0000gn/T/ipykernel_94434/3253382405.py:12: FutureWarning: The `geometries` module and `geometries_from_X` functions have been renamed the `features` module and `features_from_X` functions. Use these instead. The `geometries` module and function names are deprecated and will be removed in the v2.0.0 release. See the OSMnx v2 migration guide: https://github.com/gboeing/osmnx/issues/1123
   parks = ox.geometries_from_place(city, tags={'leisure': 'park'})
@@ -1019,8 +947,9 @@ See: https://matplotlib.org/stable/tutorials/intermediate/legend_guide.html#impl
 </div>
 </div>
 </section>
-<section id="import-noises-complaints-data" class="level1">
-<h1>Import Noises Complaints Data</h1>
+<section id="noise-pollution-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="noise-pollution-analysis">04 Noise Pollution Analysis</h2>
+<p>Using noise complaint data, we spatially assigned the number of complaints to nearby streets. Each restaurant was linked to the closest street segment, and a Noise Count was added to represent the level of potential disturbance around the restaurant.</p>
 <div id="fd6be97e-b8b0-4889-8361-4794ef6d9553" class="cell" data-execution_count="21">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> geopandas <span class="im">as</span> gpd</span>
@@ -1207,11 +1136,11 @@ See: https://matplotlib.org/stable/tutorials/intermediate/legend_guide.html#impl
 <span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>place_name <span class="op">=</span> <span class="st">"New York City, New York, USA"</span></span>
 <span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>streets <span class="op">=</span> ox.graph_from_place(place_name, network_type<span class="op">=</span><span class="st">'drive'</span>)</span>
 <span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a><span class="co"># GeoDataFrame</span></span>
-<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>street_gdf <span class="op">=</span> ox.graph_to_gdfs(streets, nodes<span class="op">=</span><span class="va">False</span>)  <span class="co"># 只获取街道线数据</span></span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>street_gdf <span class="op">=</span> ox.graph_to_gdfs(streets, nodes<span class="op">=</span><span class="va">False</span>)  </span>
 <span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a>street_gdf <span class="op">=</span> street_gdf.to_crs(epsg<span class="op">=</span><span class="dv">32618</span>)  <span class="co"># 纽约市的 UTM 坐标系</span></span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a>street_gdf <span class="op">=</span> street_gdf.to_crs(epsg<span class="op">=</span><span class="dv">32618</span>)  </span>
 <span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a>street_gdf.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="22">
 <div>
@@ -1718,20 +1647,21 @@ See: https://matplotlib.org/stable/tutorials/intermediate/legend_guide.html#impl
 <div id="16a1e626-f062-475b-8382-be1e173c68c0" class="cell" data-execution_count="26">
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">12</span>))</span>
-<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>street_gdf.plot(</span>
-<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>    ax<span class="op">=</span>ax,</span>
-<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>    column<span class="op">=</span><span class="st">'noise_count'</span>,  </span>
-<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>    cmap<span class="op">=</span><span class="st">'Reds'</span>,  </span>
-<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a>    linewidth<span class="op">=</span><span class="dv">1</span>,  </span>
-<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a>    legend<span class="op">=</span><span class="va">True</span>,  </span>
-<span id="cb19-10"><a href="#cb19-10" aria-hidden="true" tabindex="-1"></a>    alpha<span class="op">=</span><span class="fl">0.8</span>,  </span>
-<span id="cb19-11"><a href="#cb19-11" aria-hidden="true" tabindex="-1"></a>    vmin<span class="op">=</span><span class="dv">0</span>, vmax<span class="op">=</span>street_gdf[<span class="st">'noise_count'</span>].quantile(<span class="fl">0.95</span>)  </span>
-<span id="cb19-12"><a href="#cb19-12" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb19-13"><a href="#cb19-13" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Noise Complaint Density Mapped to NYC Streets"</span>)</span>
-<span id="cb19-14"><a href="#cb19-14" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Longitude"</span>)</span>
-<span id="cb19-15"><a href="#cb19-15" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"Latitude"</span>)</span>
-<span id="cb19-16"><a href="#cb19-16" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">12</span>))</span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>street_gdf.plot(</span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>    ax<span class="op">=</span>ax,</span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>    column<span class="op">=</span><span class="st">'noise_count'</span>,  </span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a>    cmap<span class="op">=</span><span class="st">'Reds'</span>,  </span>
+<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a>    linewidth<span class="op">=</span><span class="dv">1</span>,  </span>
+<span id="cb19-10"><a href="#cb19-10" aria-hidden="true" tabindex="-1"></a>    legend<span class="op">=</span><span class="va">True</span>, </span>
+<span id="cb19-11"><a href="#cb19-11" aria-hidden="true" tabindex="-1"></a>    alpha<span class="op">=</span><span class="fl">0.8</span>,  </span>
+<span id="cb19-12"><a href="#cb19-12" aria-hidden="true" tabindex="-1"></a>    vmin<span class="op">=</span><span class="dv">0</span>, vmax<span class="op">=</span>street_gdf[<span class="st">'noise_count'</span>].quantile(<span class="fl">0.95</span>)  </span>
+<span id="cb19-13"><a href="#cb19-13" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb19-14"><a href="#cb19-14" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Noise Complaint Density Mapped to NYC Streets"</span>)</span>
+<span id="cb19-15"><a href="#cb19-15" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Longitude"</span>)</span>
+<span id="cb19-16"><a href="#cb19-16" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"Latitude"</span>)</span>
+<span id="cb19-17"><a href="#cb19-17" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -1746,7 +1676,7 @@ See: https://matplotlib.org/stable/tutorials/intermediate/legend_guide.html#impl
 <span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>street_gdf <span class="op">=</span> street_gdf.to_crs(epsg<span class="op">=</span><span class="dv">32618</span>)</span>
 <span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>info_cleaned <span class="op">=</span> info_cleaned.reset_index(drop<span class="op">=</span><span class="va">False</span>) </span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>info_cleaned <span class="op">=</span> info_cleaned.reset_index(drop<span class="op">=</span><span class="va">False</span>)  </span>
 <span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a>info_cleaned.rename(columns<span class="op">=</span>{<span class="st">'index'</span>: <span class="st">'restaurant_id'</span>}, inplace<span class="op">=</span><span class="va">True</span>)</span>
 <span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a></span>
@@ -1887,29 +1817,30 @@ See: https://matplotlib.org/stable/tutorials/intermediate/legend_guide.html#impl
 </div>
 </div>
 </section>
-<section id="import-median-hh-income-data" class="level1">
-<h1>Import Median HH Income Data</h1>
+<section id="socioeconomic-context" class="level2">
+<h2 class="anchored" data-anchor-id="socioeconomic-context">05 Socioeconomic Context</h2>
+<p>Census tract-level data on median household income was used to represent the socioeconomic environment of each restaurant’s location. This data was spatially joined to ensure each restaurant is associated with the income level of its corresponding tract.</p>
 <div id="c4668bc2-4435-44ea-89a5-fd006865f26c" class="cell" data-execution_count="29">
 <div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> geopandas <span class="im">as</span> gpd</span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. 读取 Tract GeoJSON 数据</span></span>
 <span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>tracts_gdf <span class="op">=</span> gpd.read_file(<span class="st">"income.geojson"</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div id="566ab687-d121-493f-bf23-25095ba558d4" class="cell" data-execution_count="30">
 <div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>info_cleaned <span class="op">=</span> info_cleaned.to_crs(tracts_gdf.crs)</span>
 <span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 3. 使用 sjoin 进行空间连接，将餐厅匹配到对应的 Tract</span></span>
 <span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>info_with_income <span class="op">=</span> gpd.sjoin(</span>
 <span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>    info_cleaned, </span>
-<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>    tracts_gdf[[<span class="st">'geometry'</span>, <span class="st">'Median_Household_Income'</span>]], </span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>    tracts_gdf[[<span class="st">'geometry'</span>, <span class="st">'Median_Household_Income'</span>]],  <span class="co"># 选择几何列和收入列</span></span>
 <span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a>    how<span class="op">=</span><span class="st">'left'</span>, </span>
-<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a>    predicate<span class="op">=</span><span class="st">'within'</span>  </span>
+<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a>    predicate<span class="op">=</span><span class="st">'within'</span>  <span class="co"># 餐厅点必须在 Tract 内</span></span>
 <span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb22-10"><a href="#cb22-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb22-11"><a href="#cb22-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-11"><a href="#cb22-11" aria-hidden="true" tabindex="-1"></a><span class="co"># 4. 重置索引，确保没有重复值</span></span>
 <span id="cb22-12"><a href="#cb22-12" aria-hidden="true" tabindex="-1"></a>info_with_income <span class="op">=</span> info_with_income.reset_index(drop<span class="op">=</span><span class="va">True</span>)</span>
 <span id="cb22-13"><a href="#cb22-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb22-14"><a href="#cb22-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-14"><a href="#cb22-14" aria-hidden="true" tabindex="-1"></a><span class="co"># 5. 合并收入数据回 info_cleaned</span></span>
 <span id="cb22-15"><a href="#cb22-15" aria-hidden="true" tabindex="-1"></a>info_cleaned <span class="op">=</span> info_cleaned.reset_index(drop<span class="op">=</span><span class="va">True</span>)</span>
 <span id="cb22-16"><a href="#cb22-16" aria-hidden="true" tabindex="-1"></a>info_cleaned[<span class="st">'Median_Household_Income'</span>] <span class="op">=</span> info_with_income[<span class="st">'Median_Household_Income'</span>].fillna(<span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
@@ -2044,13 +1975,15 @@ See: https://matplotlib.org/stable/tutorials/intermediate/legend_guide.html#impl
 </div>
 </div>
 </section>
-<section id="clean-the-price-column" class="level1">
-<h1>Clean the “Price” Column</h1>
+<section id="price-data-cleaning-and-standardization" class="level2">
+<h2 class="anchored" data-anchor-id="price-data-cleaning-and-standardization">06 Price Data Cleaning and Standardization</h2>
+<p>The price column, which includes inconsistent formats such as ranges (e.g., <code>$10–20</code>), fixed values with a plus sign (e.g., <code>$100+</code>), and symbolic representations (e.g., <code>$</code>, <code>$$</code>, <code>$$$</code>), was cleaned and standardized as follows:</p>
+<p>For price ranges (e.g., <code>$10–20</code>), the average value of the range was computed. For prices with a + sign (e.g., <code>$100+</code>), the minimum value was extracted (e.g., 100). Symbolic prices were mapped to fixed numerical ranks to reflect affordability: <code>$</code> → 10 (most affordable) <code>$$</code> → 20 <code>$$$</code> → 50 <code>$$$$</code> → 100 (most expensive) Missing values were imputed using the median price of the cleaned column. This standardization ensures numerical consistency, making the price data suitable for comparison and further analysis.</p>
 <div id="03f1225d-3c02-4f34-bd22-dbb065c75cc7" class="cell" data-execution_count="32">
 <div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> re</span>
 <span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Function to clean and convert the 'price' column</span></span>
 <span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> clean_price(price):</span>
 <span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> pd.isnull(price):  <span class="co"># Handle missing values</span></span>
 <span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> np.nan</span>

@@ -36,7 +36,6 @@ website:
           - analysis/1_Data_Cleaning.ipynb
           - analysis/2_DatingScore_Restaurants.ipynb
           - analysis/3_NYC_Restaurant_Environmental_Insights.ipynb
-          - analysis/4_interactive_map.ipynb
           - analysis/5_K-means_to Identify_Best Dating Places.ipynb
           - analysis/6_restaurant_map.html
           

@@ -10,8 +10,3 @@ Our project aims to answer the question: "What makes an ideal restaurant for cou
 ::: {.callout-important}
 This template site, including the layout it uses, is just a suggested place to start! For your final project, you’re welcome (and encouraged) to make as many changes as you like to best fit your project.
 :::
-## Results: Restaurant Map
-
-Below is the interactive map of the best dating spots:
-
-<iframe src="analysis/6_restaurant_map.html" width="100%" height="600px"></iframe>
